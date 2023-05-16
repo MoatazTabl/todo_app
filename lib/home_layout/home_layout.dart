@@ -12,7 +12,13 @@ class HomeLayout extends StatelessWidget {
           style: Theme.of(context).textTheme.bodyMedium,
         ),
       ),
-      body: ,
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.list)),
+          BottomNavigationBarItem(icon: Icon(Icons.add)),
+          BottomNavigationBarItem(icon: Icon(Icons.settings)),
+        ],
+      ),
     );
   }
 }
